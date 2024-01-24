@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: rgb(227, 170, 151);
+    font-family: Roboto;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.scroll{
+    
+    width: 150px;
+    height: 150vh;
+    white-space: nowrap; 
+    animation: scrollAnimals 3s linear infinite;
+    
+}
+
+#questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 900px;
+
+}
+
+.que{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(146, 146, 230);
+    width: 500px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+select{
+    width: 120px;
+    height: 20px;
+}
+
+#sub{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    text-decoration: solid;
+    border-radius: 10px;
+}
+
+.animal {
+    display: block;
+    margin-bottom: 20px; /* Adjust spacing between animals */
+    
+}
+
+@keyframes scrollAnimals {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.followup{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.final{
+    width: 300px;
+    height: 300px;
+}
